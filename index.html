@@ -95,7 +95,14 @@ it Ben or Arthur that retired with more money?</p>
 								assume that constant to be C and naïvely let f(t)=Ae^(kt)+nC such n=floor(t)) then that constant is not factored in whenever
 								calculating interest and it does not compound. To solve this I use an iterative approach, and use what can be thought of as 
 								a piecewise amalgamation of multiple exponential functions.</p>
-								<p>So we know that </p> 
+								<p>So we know that other than those discrete jumps, the function obeys the rule f(t)=Ae^(kt) where A is some number.
+							The key idea is that whenever we're depositing money, we're "jumping" from one trajectory to another. In other words, we have
+									many functions f1(t), f2(t), f3(t) etc. all with different As: A1, A2, A3 etc. (This reminds me of 
+							how an electron "jumps" energy levels in discrete quanta. In our  case the "quanta" is the discrete
+							gap in the difference of money. AKA the amount that we're depositing, or specifically $2000.) It's kind of like a ladder. After we reach the year's
+									time or however long it takes to deposit the money, we go ahead and "jump" to the next trajectory in the space one higher.
+									We can calculate that trajetory by working backwords. Since we know what it's going to be at the time, we can work 
+									backwords and find A0. 
 							</p>
 
 						</div>
